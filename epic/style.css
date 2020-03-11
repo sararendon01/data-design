@@ -1,21 +1,21 @@
 
 body{
 	background-color: lightcyan;
-	text-align: center;
+	text-align: left;
 
 }
 h1{
-	text-align: center;
+	text-align: left;
 	font-family: Algerian;
-	color: blue;
+	color: mediumslateblue;
 }
 .right{
 
-	text-align: center;
+	text-align: left;
 }
 
-.center{
-	text-align: center;
+.left{
+	text-align: Left;
 }
 
 .large{
