@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h3>Entities &amp; Attributes:</h3>
+<p><strong>SPOTIFY:</strong>
+<ul>
+
+</ul>
+<p><strong>USER</strong></p>
+<ul>
+	<li>userId (primary key)</li>
+	<li>Email</li>
+	<li>User password</li>
+	<li>playlistId</li>
+
+</ul>
+<p><strong>PLAYLIST:</strong>
+<ul>
+	<li>playlistId (primary key)</li>
+	<li>artistId</li>
+	<li>genre</li>
+
+</ul>
+<p><strong>ARTIST</strong></p>
+<ul>
+	<li>artistId (primary key)</li>
+	<li>artistGenre</li>
+	<li>artistName</li>
+	<li>songs</li>
+
+</ul>
+<p><strong>PLAYLIST:</strong>
+<ul>
+	<li>artistId (foreign key)</li>
+	<li>userId (foreign key)</li>
+
+</ul>
+<p><strong>GENRE</strong></p>
+<ul>
+	<li>type</li>
+
+</ul>
+<h3>Relations</h3>
+<ul>
+	<li>Belong to only 1 user.</li>
+	<li>Having a variety of arist in 1 playlist.</li>
+
+</ul>
+
+</body>
+</html>
