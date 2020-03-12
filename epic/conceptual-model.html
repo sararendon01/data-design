@@ -10,22 +10,25 @@
 <ul>
 
 </ul>
+
 <p><strong>USER</strong></p>
 <ul>
 	<li>userId (primary key)</li>
-	<li>Email</li>
-	<li>User password</li>
-	<li>playlistId</li>
-
+	<li>userEmail</li>
+	<li>userPassword</li>
+	<li>userPlaylistId</li>
 </ul>
-<p><strong>PLAYLIST:</strong>
 <ul>
+	<strong>PLAYLIST:</strong>
+
 	<li>playlistId (primary key)</li>
-	<li>artistId</li>
-	<li>genre</li>
+	<li>playlistArtistId(foreign key)</li>
+	<li>PlaylistGenre</li>
+	<li>playlistUserId (foreign key)</li>
 
 </ul>
-<p><strong>ARTIST</strong></p>
+
+<strong>ARTIST</strong>
 <ul>
 	<li>artistId (primary key)</li>
 	<li>artistGenre</li>
@@ -33,21 +36,11 @@
 	<li>songs</li>
 
 </ul>
-<p><strong>PLAYLIST:</strong>
 <ul>
-	<li>artistId (foreign key)</li>
-	<li>userId (foreign key)</li>
 
-</ul>
-<p><strong>GENRE</strong></p>
-<ul>
-	<li>type</li>
-
-</ul>
 <h3>Relations</h3>
-<ul>
-	<li>Belong to only 1 user.</li>
-	<li>Having a variety of arist in 1 playlist.</li>
+	<li>One account can only belong to only 1 user (1 to 1).</li>
+	<li>Having a variety of artist in 1 playlist (many to many).</li>
 </ul>
 
 </body>
